@@ -1,7 +1,7 @@
 <x-guest-layout>
-    <x-authentication-card>
+    <x-authentication-card style="background-image: url('/path/to/your/image.jpg'); background-size: cover;">
         <x-slot name="logo">
-            <x-authentication-card-logo />
+            
         </x-slot>
 
         <div class="mb-4 text-sm text-gray-600">
