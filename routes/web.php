@@ -16,6 +16,7 @@ use App\Http\Controllers\HomeController;
 
 Route::get('/',[HomeController::class,"index"]);
 Route::get('/users',[AdminController::class,"user"]);
+Route::get('/deleteuser/{$id}',[AdminController::class,"deleteuser"]);
 
 
 
@@ -26,7 +27,7 @@ Route::get('/redirects',[HomeController::class,"redirects"]);
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
-    'verified',
+    'verified'
 ])->group(function () {
     Route::get('/dashboard', function () {
         return view('dashboard');
