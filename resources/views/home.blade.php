@@ -81,7 +81,6 @@ https://templatemo.com/tm-558-klassy-cafe
                                     <li><a href="#">Features Page 4</a></li>
                                 </ul>
                             </li>
-                            <li class="scroll-to-section"><a href="#about">Contact us</a></li>
                             <!-- <li class=""><a rel="sponsored" href="https://templatemo.com" target="_blank">External URL</a></li> -->
                             <li class="scroll-to-section"><a href="#reservation">Contact Us</a></li>
 
@@ -90,7 +89,9 @@ https://templatemo.com/tm-558-klassy-cafe
                                 <div class="sm:fixed sm:top-0 sm:right-0 p-6 text-right z-10">
                                     @auth
                                         <li class="scroll-to-section" >
-                                        <x-app-layout>
+                                       
+                                         <x-app-layout>
+
                                         </x-app-layout>    
                                         </li>
                                     @else
