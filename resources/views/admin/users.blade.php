@@ -17,7 +17,8 @@
   <body>
     <div class="container-scroller">   
     @include("admin.navbar")
-   <div style=" position: relative; top:60px; right:-150px ;">
+
+   <div style=" position: relative; top:10px; right:-30px ;">
     <table bgcolor="grey" border="3px">
         <tr>
             <th style="padding:30px">Name</th>
@@ -30,6 +31,7 @@
           <td>{{ $data->email }}</td>
 
           @if($data->usertype=="0")
+
           <td><a href="{{ url('/deleteuser', $data->id) }}">Delete </a></td>
           @else 
           <td><a href="">Not Allowed </a></td>
